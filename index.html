@@ -3,64 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Panel Pterodactyl By Nana</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>NANA PANEL | XPANEL</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="particles" id="particles"></div>
+<audio id="bgm" loop>
+  <source src="https://a.top4top.io/m_3692mtr4t0.mp3" type="audio/mpeg">
+</audio>
+
+<div id="bg-overlay"></div>
 
 <div class="container">
-  <img src="https://files.catbox.moe/ijttf2.png" alt="Chibi Bot" class="chibi-bot">
-  <h2>Reseller Panel</h2>
-  <h3>by Nana</h3>
-  <p></p>
+  <div class="banner-wrapper">
+    <img src="https://g.top4top.io/p_36929rtt80.jpg" alt="Gundam Banner" class="gundam-banner">
+    <div class="banner-border"></div>
+  </div>
+
+  <h2>NANA-PANEL</h2>
+  
+  <div class="glitch-wrapper">
+    <p class="glitch-text" id="sad-text">INITIALIZING...</p>
+  </div>
 
   <div id="step1">
-    <label>Username:</label>
-    <input type="text" id="username" placeholder="Masukkan username kamu" required>
+    <div class="input-group">
+        <label>IDENTIFICATION REQUIRED (ADA LAGU)</label>
+        <input type="text" id="username" placeholder="NAME YOUR SOUL..." required autocomplete="off">
+    </div>
 
-    <label>Pilih Paket RAM:</label>
-    <select id="paket">
-      <option value="">-- Pilih Paket --</option>
-      <option value="1gb">1GB</option>
-      <option value="2gb">2GB</option>
-      <option value="3gb">3GB</option>
-      <option value="4gb">4GB</option>
-      <option value="5gb">5GB</option>
-      <option value="6gb">6GB</option>
-      <option value="7gb">7GB</option>
-      <option value="8gb">8GB</option>
-      <option value="9gb">9GB</option>
-      <option value="10gb">10GB</option>
-      <option value="unli">Unlimited</option>
-    </select>
+    <label class="label-center">SELECT MEMORY CAPACITY</label>
+    
+    <div class="ram-card-slider" id="ram-slider"></div>
       
-    <button onclick="login()">Login & Buat Panel</button>
+    <button class="btn-primary" onclick="login()">INITIALIZE SYSTEM</button>
   </div>
 
   <div id="loadingStep" class="hidden">
-    <div class="spinner"></div>
-    <p>Sedang membuat panel kamu...</p>
+    <div class="tech-loader"><div class="scan-line"></div></div>
+    <p class="loading-text">RECONSTRUCTING REALITY...</p>
   </div>
 
   <div id="step2" class="hidden">
-    <h3 class="success-msg">✅ Panel Berhasil Dibuat!</h3>
-    <div class="info-box">
-      <p><b>Email:</b> <span id="email"></span></p>
-      <p><b>Username:</b> <span id="uname"></span></p>
-      <p><b>Password:</b> <span id="pass"></span></p>
-      <p><b>Link Login:</b> <a href="https://panel.wazzzzzzzzzzzz.cyberpanel.web.id" target="_blank" style="color:var(--blue);">Klik di sini</a></p>
-      <p><b>Paket RAM:</b> <span id="ram"></span></p>
+    <h3 class="success-msg">DEPLOYMENT SUCCESSFUL</h3>
+    <div class="data-grid">
+      <div class="data-item"><span>USER</span> <b id="uname"></b></div>
+      <div class="data-item"><span>PASS</span> <b id="pass"></b></div>
+      <div class="data-item"><span>CORE</span> <b id="ram"></b></div>
     </div>
-    <button onclick="goBack()">⬅ Kembali</button>
-  </div>
-
-  <div id="errorStep" class="hidden">
-    <h3 class="error-msg">❌ Gagal Membuat Panel!</h3>
-    <p id="errorText"></p>
-    <button onclick="goBack()">⬅ Kembali</button>
+    <div class="button-group-row">
+        <a href="https://panel.wazzzzzzzzzzzz.cyberpanel.web.id" target="_blank" class="btn-console">ACCESS CONSOLE</a>
+        <button class="btn-new" onclick="goBack()">NEW BOOT</button>
+    </div>
   </div>
 </div>
 
