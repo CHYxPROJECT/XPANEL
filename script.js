@@ -118,7 +118,7 @@ async function execDeploy() {
   updateNana("Lagi Nana rakit nih, ssttt... 🤫");
   await runTerminal();
   try {
-    const url = `https://api.resellergaming.my.id/pterodactyl/addpanel?domain=wazzxnasa.zerocloud.web.id&plta=ptla_1omaExb64N83zTXrBshSNmIOctUDlDM7wUhhJ6bpyzG&username=${user}&disk=${currentSelected.disk}&cpu=${currentSelected.cpu}`;
+    const url = `https://api.resellergaming.my.id/pterodactyl/addpanel?domain=https://wazzxnasa.zerocloud.web.id&plta=ptla_1omaExb64N83zTXrBshSNmIOctUDlDM7wUhhJ6bpyzG&username=${user}&disk=${currentSelected.disk}&cpu=${currentSelected.cpu}`;
     const res = await fetch(url);
     const data = await res.json();
     setTimeout(() => {
