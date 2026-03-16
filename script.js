@@ -55,11 +55,11 @@ setInterval(() => {
 
 // Data Paket
 const allPlans = [
-  { ram: "1GB", price: "10.000", disk: 1000, cpu: 40 },
-  { ram: "2GB", price: "20.000", disk: 2000, cpu: 60 },
-  { ram: "3GB", price: "30.000", disk: 3000, cpu: 80 },
-  { ram: "4GB", price: "40.000", disk: 4000, cpu: 100 },
-  { ram: "UNLI", price: "150.000", disk: 0, cpu: 0 }
+  { ram: "1GB", price: "FREE", disk: 1000, cpu: 40 },
+  { ram: "2GB", price: "FREE", disk: 2000, cpu: 60 },
+  { ram: "3GB", price: "FREE", disk: 3000, cpu: 80 },
+  { ram: "4GB", price: "FREE", disk: 4000, cpu: 100 },
+  { ram: "UNLI", price: "FREE", disk: 0, cpu: 0 }
 ];
 
 // Audio Control
